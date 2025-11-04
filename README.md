@@ -67,9 +67,19 @@ training and test sets.
 
 - **[Python](https://www.python.org)** 🐍
 - **[Pandas](https://pandas.pydata.org/docs/index.html)** Python library used for 
-working with data sets with functions for cleaning, exploring and manipulating data 🐼
+working with data sets with functions for cleaning, exploring and manipulating data. 🐼
+- **[Matplotlib](https://matplotlib.org/stable/)**, a comprehensive Python library for creating static, animated and interactive visualizations.
+- **[`scikit-learn`](https://scikit-learn.org/stable/index.html)**, for machine learning and predictive data analysis in Python.
 
 ### What I learned 🧠
+
+**1. Loading a toy dataset in `scikit-learn` as a Pandas `DataFrame`**
+
+The [wine dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine) was used for this assignment:
+
+```python
+	wine_dataset = load_wine(return_X_y=True, as_frame=True)
+```
 
 ### Continued development 🌱
 

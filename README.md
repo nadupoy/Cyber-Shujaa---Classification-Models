@@ -78,7 +78,11 @@ working with data sets with functions for cleaning, exploring and manipulating d
 The [wine dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine) was used for this assignment:
 
 ```python
-	wine_dataset = load_wine(return_X_y=True, as_frame=True)
+	# Load the data, returning the entire dataset as a single Bunch object containing a 'frame' attribute (the DataFrame):
+	wine_dataset_bunch = load_wine(return_X_y=False, as_frame=True)
+
+	# Access the DataFrame directly from the 'frame' attribute:
+	wine_dataset_df = wine_dataset_bunch.frame
 ```
 
 ### Continued development 🌱
